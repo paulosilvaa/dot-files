@@ -18,10 +18,10 @@ cab Q  q
 
 " Maps
 map q :q! 
-map <F6> :syn on<cr>
-map <F7> :syn off<cr>
-map <F8> :set number<cr>
-map <F9> :set nonumber<cr>
+map <F5> :syn on<cr>
+map <F6> :syn off<cr>
+map <F7> :set number<cr>
+map <F8> :set nonumber<cr>
 
 " Viminfo file
 set viminfo='10,\"30,:20,%,n~/.viminfo
