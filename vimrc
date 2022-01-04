@@ -2,12 +2,15 @@
 syn on			" Enable colors
 set background=dark	" Dark mode
 set nu			" Number lines
+set rnu			" Relative numbers
 set nocp		" No compatible
 set noru		" No ruler
-set is			" Search
-set ic			" Search
-set hls			" Searc
+set is			" Inc Search
+set ic			" Ignore Case
+set hls			" Highlight Serach
+set scs			" SmartCase
 set magic		" Enables
+set so=8        	" Minimal number of screen lines to keep above and below the cursor.
 
 " Abbreviations
 cab W  w
@@ -16,12 +19,11 @@ cab wQ wq
 cab WQ wq
 cab Q  q
 
-" Maps
-map q :q! 
+" Maps map q :q!  map <F5> :syn on<cr>
 map <F5> :syn on<cr>
 map <F6> :syn off<cr>
-map <F7> :set number<cr>
-map <F8> :set nonumber<cr>
+map <F7> :set nu rnu<cr>
+map <F8> :set nonu nornu<cr>
 
 " Viminfo file
 set viminfo='10,\"30,:20,%,n~/.viminfo
@@ -55,7 +57,7 @@ let g:currentmode={
     \}
 
 set laststatus=2
-set noshowmode						 " Don't show the actual mode
+set noshowmode                                           " Don't show the actual mode
 set statusline=
 set statusline+=%0*\ %{toupper(g:currentmode[mode()])}\  " The current mode
 set statusline+=%1*\ %<%F%m%r%h%w\                       " File path, modified, readonly, helpfile, preview
@@ -73,3 +75,9 @@ set statusline+=%0*\ %n\                                 " Buffer number
 hi User1 ctermfg=007 ctermbg=239 guibg=#4e4e4e guifg=#adadad
 hi User2 ctermfg=007 ctermbg=236 guibg=#303030 guifg=#adadad
 hi User3 ctermfg=236 ctermbg=236 guibg=#303030 guifg=#303030
+
+" Enables cursor line position tracking:
+set cursorline
+highlight CursorLineNR cterm=bold ctermfg=Yellow ctermbg=236 
+highlight CursorLine term=NONE cterm=NONE ctermbg=236
+highlight LineNr ctermfg=236 guifg=#2D3640
