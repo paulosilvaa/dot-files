@@ -10,12 +10,12 @@ set ic			    " Ignore Case
 set hls			    " Highlight Serach
 set scs			    " SmartCase
 set magic		    " Enables
-set so=8        	" Minimal number of screen lines to keep above and below the cursor.
-set tabstop=4       " a
-set softtabstop=4   " a
-set shiftwidth=4    " a
-set expandtab       " a
-set smartindent     " a
+set so=8        	" Minimal number of screen lines to keep above and below the cursor
+set tabstop=4       " Number of spaces that a <Tab> in the file counts for
+set softtabstop=4   " Will affect the characters that VIM actually gets by pressing tab in insert mode
+set shiftwidth=4    " Number of spaces to use for each step of (auto)indent
+set expandtab       " In Insert mode: Use the appropriate number of spaces to insert a <Tab>
+set smartindent     " Do smart autoindenting when starting a new line
 
 " Abbreviations
 cab W  w
