@@ -1,16 +1,21 @@
 " Options
-syn on			" Enable colors
+syn on			    " Enable colors
 set background=dark	" Dark mode
-set nu			" Number lines
-set rnu			" Relative numbers
-set nocp		" No compatible
-set noru		" No ruler
-set is			" Inc Search
-set ic			" Ignore Case
-set hls			" Highlight Serach
-set scs			" SmartCase
-set magic		" Enables
+set nu			    " Number lines
+set rnu			    " Relative numbers
+set nocp		    " No compatible
+set noru		    " No ruler
+set is			    " Inc Search
+set ic			    " Ignore Case
+set hls			    " Highlight Serach
+set scs			    " SmartCase
+set magic		    " Enables
 set so=8        	" Minimal number of screen lines to keep above and below the cursor.
+set tabstop=4       " a
+set softtabstop=4   " a
+set shiftwidth=4    " a
+set expandtab       " a
+set smartindent     " a
 
 " Abbreviations
 cab W  w
@@ -24,6 +29,13 @@ map <F5> :syn on<cr>
 map <F6> :syn off<cr>
 map <F7> :set nu rnu<cr>
 map <F8> :set nonu nornu<cr>
+
+" Change the mapleader from \ to Space bar
+let mapleader=" "
+
+" Quickly save your file.
+map <leader>w :w!<cr>
+map <leader>q :q!<cr>
 
 " Viminfo file
 set viminfo='10,\"30,:20,%,n~/.viminfo
