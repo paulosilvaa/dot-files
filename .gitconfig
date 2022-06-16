@@ -1,0 +1,22 @@
+[user]
+	name = Paulo Cesar da Silva
+	email = pcsneoh@gmail.com
+[color]
+	status = auto
+	push = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+[core]
+	editor = vim
+[alias]
+	b = branch
+	s = status
+	p = pull
+	l = log
+	c = commit
+	aa = add .
+[remote "origin"]
+	prune = true
+[pull]
+	rebase = true
