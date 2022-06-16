@@ -1,0 +1,16 @@
+# Ignore case when completing
+set completion-ignore-case on
+
+# Enable completion coloring
+set colored-completion-prefix on
+#set colored-stats on
+
+# Disable more-like pager of completion list
+#set page-completions off
+
+# Immediately display completion matches
+set show-all-if-ambiguous on
+
+# Keep terminal quiet and clean
+set bell-style none
+set echo-control-characters off
