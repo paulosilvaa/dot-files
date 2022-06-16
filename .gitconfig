@@ -16,6 +16,8 @@
 	l = log
 	c = commit
 	aa = add .
+	bd = branch -D
+	lo = log --oneline --graph
 [remote "origin"]
 	prune = true
 [pull]
