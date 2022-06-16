@@ -2,5 +2,7 @@
 
 Some dot files that works fine to me... =]
 
-* VIMRC
-* INPUTRC
+* vimrc
+* inputrc
+* htoprc
+* gitconfig
