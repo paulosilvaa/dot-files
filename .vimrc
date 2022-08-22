@@ -25,10 +25,30 @@ cab WQ wq
 cab Q  q
 
 " Maps map q :q!  map <F5> :syn on<cr>
-map <F5> :syn on<cr>
-map <F6> :syn off<cr>
+" Enable syntax on
+"map <F5> :syn on<cr>
+" Disable syntax on
+"map <F6> :syn off<cr>
+" Enable number lines
 map <F7> :set nu rnu<cr>
+" Disable number lines
 map <F8> :set nonu nornu<cr>
+" She-bang!
+nnoremap <F9> i#!/usr/bin/env bash<cr>
+              \#:r!echo %<cr>0i
+              \# Script: o
+              \#<cr>
+              \# Author: Paulo Cesar da Silva <pcsneoh@gmail.com>
+              \<cr><cr>
+              \set -euo pipefail
+              \<cr><cr>
+imap <F9> #!/usr/bin/env bash<cr>
+          \#:r!echo %<cr>0i
+          \# Script: o
+          \#<cr># Author: Paulo Cesar da Silva <pcsneoh@gmail.com>
+          \<cr><cr>
+          \set -euo pipefail
+          \<cr><cr>
 
 " Change the mapleader from \ to Space bar
 let mapleader=" "
