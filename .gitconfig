@@ -11,14 +11,22 @@
 	editor = vim
 [alias]
 	b = branch
-	s = status
-	p = pull
+	d = diff
 	l = log
-	c = commit
+	p = pull
+	s = status
 	aa = add .
 	bd = branch -D
-	lo = log --oneline --graph
+    cm = commit -m
+    dv = difftool -t vimdiff -y
+	gl = config --global -l
+	ll = log --oneline --graph
+	st = status -sb
+	count = rev-list --count
+	last = log -1 HEAD --stat
 [remote "origin"]
 	prune = true
 [pull]
 	rebase = true
+[help]
+    autocorrect = 1

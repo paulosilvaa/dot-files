@@ -4,5 +4,6 @@ Some dot files that works fine to me... =]
 
 * vimrc
 * inputrc
-* htoprc
 * gitconfig
+    - vim-enhanced
+    - git-extras
