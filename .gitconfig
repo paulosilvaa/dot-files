@@ -17,8 +17,8 @@
 	s = status
 	aa = add .
 	bd = branch -D
-    cm = commit -m
-    dv = difftool -t vimdiff -y
+	cm = commit -m
+    	dv = difftool -t vimdiff -y
 	gl = config --global -l
 	ll = log --oneline --graph
 	st = status -sb
